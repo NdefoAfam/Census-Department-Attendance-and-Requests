@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  min-height: 100vh;
+  background: #084718;
+}
+
+.hero-image img {
+    height: 20rem; 
+    width: 25rem;
+}
+
+div span {
+  font-size: 11px; /* Adjust the font size as needed */
+}
+
+.location-info {
+  display: inline-block;
+  margin-right: 20px; /* Adjust as needed for spacing between the elements */
+}
+
+h2{
+  color: #084718;
+}
+
+
+form {
+  padding: 25px;
+  background: #fff;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 7px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+form h2 {
+  font-size: 27px;
+  text-align: center;
+  margin: 0px 0 30px;
+}
+
+form .form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+form label {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 7px;
+}
+
+form input,
+form select {
+  height: 45px;
+  padding: 10px;
+  width: 100%;
+  font-size: 15px;
+  outline: none;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #bfbfbf;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #9a9a9a;
+}
+
+form input.error,
+form select.error {
+  border-color: #f91919;
+  background: #f9f0f1;
+}
+
+form small {
+  font-size: 14px;
+  margin-top: 5px;
+  display: block;
+  color: #f91919;
+}
+
+form .password i {
+  position: absolute;
+  right: 0px;
+  height: 45px;
+  top: 28px;
+  font-size: 13px;
+  line-height: 45px;
+  width: 45px;
+  cursor: pointer;
+  color: #939393;
+  text-align: center;
+}
+
+.submit-btn {
+  margin-top: 30px;
+}
+
+.submit-btn input {
+  color: white;
+  border: none;
+  height: auto;
+  font-size: 16px;
+  padding: 13px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  text-align: center;
+  background: #084718;
+  transition: 0.2s ease;
+}
+
+.submit-btn input:hover {
+  background: #179b81;
+}
+
+
+/* Default styles for the hero image */
+.hero-image img {
+  /* Your default styles for the image */
+  max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .hero-image img {
+    /* Adjust the size of the image for smaller screens */
+    max-width: 50%; /* For example, set the maximum width to 50% */
+  }
+}
+
+/* Media query for screens smaller than 480px */
+@media (max-width: 480px) {
+  .hero-image img {
+    /* Further adjustments for even smaller screens */
+    max-width: 80%; /* For example, set the maximum width to 80% */
+  }
+
+  @media screen {
+    /* Your CSS rules for all screen sizes here */
+    .form-group.posting {
+      /* Example styling */
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    #posting {
+      /* Example styling */
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      background-color: #f8f8f8;
+    }
+  }
+  
+  /* CSS for smaller screens */
+  @media screen and (max-width: 768px) {
+    /* Your CSS rules for smaller screens here */
+    #posting {
+      /* Example font size adjustment */
+      font-size: 14px;
+    }
+  }
+}
+
