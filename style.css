@@ -2027,6 +2027,16 @@ form .password i {
       font-size: 3rem; /* Decrease font size on smaller screens */
       margin-top: 2rem; /* Decrease margin top on smaller screens */
   }
+  form {
+	padding: 25px;
+	background: #fff;
+	max-width: 500px;
+	width: 100%;
+	border-radius: 7px;
+	margin-top: 10rem;
+	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+  }
+  
 }
 
 /* Media query for screens smaller than 480px */
@@ -2034,6 +2044,15 @@ form .password i {
   .hero-image img {
     /* Further adjustments for even smaller screens */
     max-width: 100%; /* For example, set the maximum width to 80% */
+  }
+  form {
+	padding: 25px;
+	background: #fff;
+	max-width: 500px;
+	width: 100%;
+	border-radius: 7px;
+	margin-top: 10rem;
+	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
   }
 
   @media screen {
