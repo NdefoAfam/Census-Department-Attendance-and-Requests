@@ -4,7 +4,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Validation in HTML | CodingNepal</title>
+    <title>Census Department | System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <!-- Fontawesome CDN Link For Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
@@ -13,9 +14,10 @@
     
     <form action="thank-you.html">
       <div class="hero-image">
-        <img src="image/NPC.jpg">
+        <img src="image/Asset 82census.png">
       </div>
       <h2>CENSUS DEPARTMENT</h2>
+      <h3>ATTENDANCE</h3>
       <div class="location-info">
         <label for="latitude" style="font-size: 12px;">Latitude: <span id="latitude"></span></label>
         <span id="latitude"></span>
@@ -185,9 +187,12 @@
           <option value="Female">NPC Wuye Office</option>
         </select>
       </div>
-      <div class="form-group submit-btn">
-        <input type="submit" value="Submit">
-      </div>
+      <form id="myForm" action="thankyoupage.html" method="post">
+        <div class="form-group submit-btn">
+          <input type="submit" value="Submit" onclick="redirect()">
+        </div>
+      </form>      
+
     </form>
 
     <script src="script.js"></script>
@@ -195,6 +200,7 @@
     <script src="script2.js"></script>
     <script src="script3.js"></script>
     <script src="gpscript.js"></script>
+    <script src="thankyou.js"></script>
 
   </body>
 </html>

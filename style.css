@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -15,10 +15,183 @@ body {
   min-height: 100vh;
   background: #084718;
 }
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  text-align: center;
+  background-color: green;
+  z-index: 100;
+}
+
+
+
+nav .nav-bar{
+  position: relative;
+  height: 100%;
+  max-width: 1000px;
+  width: 100%;
+  background-color: green;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .nav-bar .sidebarOpen{
+  color: var(--text-color);
+  font-size: 25px;
+  padding: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu .logo-toggle{
+  display: none;
+}
+
+.nav-bar .h2{
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar .h2 li{
+  margin: 0 5px;
+  list-style: none;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  max-width: 1250px;
+  margin: 150px auto;
+  padding: 20px;
+  gap: 20px;
+}
+.card-list .card-item {
+  background: #fff;
+  padding: 26px;
+  border-radius: 8px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+  list-style: none;
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: border 0.5s ease;
+}
+.card-list .card-item:hover {
+  border: 2px solid #000;
+}
+.card-list .card-item img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.card-list span {
+  display: inline-block;
+  background: #F7DFF5;
+  margin-top: 32px;
+  padding: 8px 15px;
+  font-size: 0.75rem;
+  border-radius: 50px;
+  font-weight: 600;
+}
+.card-list .developer {
+  background-color: #F7DFF5; 
+  color: #B22485;
+}   
+.card-list .designer {
+  background-color: #d1e8ff;
+  color: #2968a8;
+}
+.card-list .editor {
+  background-color: #d6f8d6; 
+  color: #205c20;
+}
+.card-item h3 {
+  color: #000;
+  font-size: 1.438rem;
+  margin-top: 28px;
+  font-weight: 600;
+}
+.card-item .arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-35deg);
+  height: 40px;
+  width: 40px;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin-top: 40px;
+  transition: 0.2s ease;
+}
+.card-list .card-item:hover .arrow  {
+  background: #000;
+  color: #fff; 
+}
+@media (max-width: 1200px) {
+  .card-list .card-item {
+      padding: 15px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .card-list {
+      margin: 0 auto;
+  }
+}
+
+
+@media screen and (max-width: 520px) {
+  h1 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #889DB8;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+  transition-delay: 0.3s;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media screen and (max-width: 520px) {
+  p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+
+@media screen and (max-width: 520px) {
+  .swiper-button-next:hover:before,
+.swiper-button-prev:hover:before {
+    display: none;
+  }
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .hero-image img {
     height: 20rem; 
-    width: 25rem;
+    width: 35rem;
+    position: relative;
 }
 
 div span {
@@ -28,12 +201,21 @@ div span {
 .location-info {
   display: inline-block;
   margin-right: 20px; /* Adjust as needed for spacing between the elements */
+  
 }
+
+
 
 h2{
-  color: #084718;
+  color: #fff;
+  text-align: center;
 }
 
+h3{
+  color: #084718;
+  text-align: center;
+  margin-top: -1rem;
+}
 
 form {
   padding: 25px;
@@ -104,6 +286,48 @@ form .password i {
   text-align: center;
 }
 
+.request-box {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.request-box label {
+  font-weight: bold;
+}
+
+.request-box textarea {
+  width: 100%;
+  height: 150px;
+  margin-top: 10px;
+  padding: 10px;
+  resize: vertical;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.request-box input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #084718;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
 .submit-btn {
   margin-top: 30px;
 }
@@ -134,11 +358,33 @@ form .password i {
   height: auto; /* Maintain the aspect ratio */
 }
 
+@media (max-width: 1200px) {
+  .card-list .card-item {
+      padding: 15px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .card-list {
+      margin: 0 auto;
+  }
+}
+
 /* Media query for screens smaller than 768px */
 @media (max-width: 768px) {
   .hero-image img {
     /* Adjust the size of the image for smaller screens */
-    max-width: 50%; /* For example, set the maximum width to 50% */
+    max-width: 100%; /* For example, set the maximum width to 50% */
+  }
+  .container {
+    width: 100%; /* Set width to 100% on smaller screens */
+}
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+      text-align: center; /* Center the heading on smaller screens */
+      font-size: 3rem; /* Decrease font size on smaller screens */
+      margin-top: 2rem; /* Decrease margin top on smaller screens */
   }
 }
 
@@ -146,7 +392,7 @@ form .password i {
 @media (max-width: 480px) {
   .hero-image img {
     /* Further adjustments for even smaller screens */
-    max-width: 80%; /* For example, set the maximum width to 80% */
+    max-width: 100%; /* For example, set the maximum width to 80% */
   }
 
   @media screen {
@@ -164,6 +410,22 @@ form .password i {
       border-radius: 5px;
       border: 1px solid #ccc;
       background-color: #f8f8f8;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 24px; /* Adjust the font size as needed */
+    }
+    .card-item {
+      width: 100%; /* Make each card item take up full width */
+    }
+    .card-item img {
+      width: 100%; /* Make the card image take up full width */
+      height: auto; /* Maintain aspect ratio */
+    }
+    .card-item h3 {
+      font-size: 16px; /* Adjust the font size of the card item headings */
     }
   }
   
