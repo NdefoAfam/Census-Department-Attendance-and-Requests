@@ -1097,7 +1097,6 @@ div span {
 .location-info {
   display: inline-block;
   margin-right: 20px; /* Adjust as needed for spacing between the elements */
-  
 }
 
 
@@ -1289,7 +1288,7 @@ form .password i {
 	max-width: 500px;
 	width: 100%;
 	border-radius: 7px;
-	margin-top: 10rem;
+	margin-top: 1rem;
 	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
   }
   
@@ -1307,7 +1306,7 @@ form .password i {
 	max-width: 500px;
 	width: 100%;
 	border-radius: 7px;
-	margin-top: 10rem;
+	
 	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
   }
 
