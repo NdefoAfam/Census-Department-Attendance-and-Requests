@@ -1009,9 +1009,9 @@ p1 {
 	}
 	.Website-container section.reusable .headings h1{
 		position: relative;
-		font-size: 24px;
+		font-size: 26px;
 		margin: 10px 0px 15px;
-		
+		margin-top: -2rem;
 		color: white;
 	}
 	.Website-container section.reusable .headings p{
