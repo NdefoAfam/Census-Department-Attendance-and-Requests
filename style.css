@@ -402,7 +402,26 @@ button.contact-btn{
 }
 /*   *** Services Section Styling Ends   */
   
-  
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    bottom: 0;
+    left: 0;
+    width: 110%;
+    height: 100px; /* Adjust height as needed */
+	margin-left: -1rem;
+    background-color: var(--secondary-heading);
+    color: #e3f0fa;
+}
+
+.footer p {
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add padding for spacing */
+	margin-left: 0.5rem;
+}
+
 
 /*? mobile */
 
@@ -1033,23 +1052,6 @@ p1 {
 		width: 75%;
 	}
 }
-
-
-  
-  
-/*   *** Media Query Ends ***   */
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media screen and (max-width: 520px) {
