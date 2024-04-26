@@ -1,18 +1,13 @@
+// Function to update the time input field with the current time
 function updateTime() {
-    var currentTimeElement = document.getElementById("currentTime");
-    var now = new Date();
-    var hours = now.getHours().toString().padStart(2, '0');
-    var minutes = now.getMinutes().toString().padStart(2, '0');
-    var seconds = now.getSeconds().toString().padStart(2, '0');
-    var currentTimeString = hours + ":" + minutes + ":" + seconds;
-    currentTimeElement.textContent = currentTimeString;
-
-    // Set the value of the attendance time input field to the current time
-    document.getElementById("attendanceTime").value = currentTimeString;
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+    const currentTime = `${hours}:${minutes}:${seconds}`;
+    document.getElementById('time').value = currentTime;
 }
 
-// Update time when the page loads
+// Update the time initially and set interval to update it every second
 updateTime();
-
-// Update time every second
 setInterval(updateTime, 1000);
