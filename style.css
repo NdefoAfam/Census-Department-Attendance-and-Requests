@@ -202,7 +202,7 @@ body{
 }
 .Website-container{
 	position: relative;
-	max-width: 1500px;
+	max-width: 2500px;
 	margin: 0px auto;
 }
 
@@ -1330,6 +1330,29 @@ form .password i {
     }
   }
 
+  @media screen and (max-width: 1366px) {
+	h2 {
+		text-align: center; /* Center the heading on smaller screens */
+		font-size: 3rem; /* Decrease font size on smaller screens */
+		margin-top: 2rem; /* Decrease margin top on smaller screens */
+	}
+	form {
+	  padding: 25px;
+	  background: #fff;
+	  max-width: 500px;
+	  width: 100%;
+	  border-radius: 7px;
+	  margin-top: -3rem;
+	  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+	}
+	.Website-container{
+		position: relative;
+		max-width: 2500px;
+		margin: 0px auto;
+		}
+  }
+
+
   @media screen and (max-width: 768px) {
     h2 {
       font-size: 15px; /* Adjust the font size as needed */
@@ -1356,4 +1379,3 @@ form .password i {
     }
   }
 }
-
