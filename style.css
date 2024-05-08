@@ -14,7 +14,6 @@ body {
   padding: 0 10px;
   min-height: 100vh;
   background: rgb(185, 206, 185);
-}
   
 }
 nav{
@@ -169,7 +168,6 @@ button.btn:hover{
 .Website-container section.reusable{
 	width: 100%;
 	padding: 70px 8% 50px;
-	
 }
 .Website-container section.reusable .headings{
 	max-width: 800px;
@@ -378,6 +376,16 @@ button.contact-btn{
     transition: all 0.4s cubic-bezier(0.69, 0.05, 0, 0.97);
 }
 
+.service-box {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.service-box.slide-in {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 .services-container .service-box:hover::after{
 	height: 100%;
@@ -786,7 +794,7 @@ p1 {
 /*   === Screen Size 1500px or Smaller  ===   */
 
 /* Media Query for Screens Size of 1500px */
-@media (min-width: 1500px) {
+@media (min-width: 2500px) {
     /* Adjust margin for menu items in the navbar */
     .navbar ul.nav-links li {
         margin: 0 20px;
@@ -797,7 +805,7 @@ p1 {
         flex-basis: 25%; /* Adjust as needed */
     }
 
-    /* Add specific styles for screens with a size of 1500px */
+    /* Add specific styles for screens with a size of 2500px */
     .custom-class {
         color: #007bff; /* Change color as needed */
         font-size: 18px; /* Change font size as needed */
@@ -1380,3 +1388,4 @@ form .password i {
     }
   }
 }
+
